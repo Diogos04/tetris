@@ -206,6 +206,10 @@
 
                 score += rowCount * 10;
                 rowCount *= 2;
+
+                if (score %50 === 0 && dropInterval > 200){
+                    dropInterval -= 100;
+                }
             }
         }
 
